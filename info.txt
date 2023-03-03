@@ -1,0 +1,13 @@
+A continuación se presenta un menu que contiene 20 programas basicos hechos en C++ en mi mac
+Hecho Por Sebastián Holweger
+Con un ciclo Do...While me encargue de que el menu de opciones me permita elegir hasta que el usuario decida salir del programas
+cree diferentes "Void" para cada programa, permitiendome llamarlos dentro de un switch en mi funcion Main()
+Cada programa fue hecho tratando de utilizar buenas practicas de programacion, sin incluir muchas librerias
+Esto por dos razones:
+        1. Se me limitaba mucho trabajr programas con liberias en mac 
+        2. tratar de utilizar mi conocimiento de programacion adquirido durante estos dos años de carrera
+
+El programa del punto no pude realizarlo ya que en mac no me permitia utilizar casi ninguna libreria... 
+Por eso mismo fue sustituido por un programa alterno para conversion de temperaturas
+Fui dejando comentarios para que sea mas facil de entender el programa, y tambien me servia a mi conforme iba programando durante los dias para no perderme
+se ha tratado de minimizar errores y hacer lo mas preciso posible algunos resultados...
