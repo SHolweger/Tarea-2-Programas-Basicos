@@ -326,12 +326,10 @@ string centenas[10] = {"", "ciento", "doscientos", "trescientos", "cuatrocientos
 
 }
 void tablamultiplicar() {
-  int n = 0;
-  do {
+  cout<<"Programa de Tablas de Multiplicar\n- Por Sebastian Holweger\n";
+  double n = 0; 
     cout << "Ingrese la tabla de multiplicar que desea: " << endl;
     cin >> n;
-
-  } while ((n < 1) || (n > 10));
   for (int x = 1; x <= 10; x++) {
     cout << n << " * " << x << " = " << n * x << endl;
   }
@@ -351,10 +349,6 @@ void tablashastadiez() {
     cout << endl;
   }
 
-  cout<<"Desea continuar? (s/n) ";
-  cin>>op;
-  if (op=='s'){tablashastadiez();}
-  if (op=='n'){cout<<' ';}
 }
 void MultiplicacionManual() {
   int num1, num2;
@@ -530,7 +524,7 @@ void Hipotenusa() {
   cout << "Porfavor ingrese el segundo Cateto: ";
   cin >> c2;
   hipotenusa = sqrt((c1 * c1) + (c2 * c2));
-  cout << "\nLa hipotenusa es: " << hipotenusa;
+  cout << "\nLa hipotenusa es: " << hipotenusa<<endl;
 
 cout<<"Desea continuar? (s/n) ";
   cin>>op;
@@ -545,6 +539,7 @@ double kmRecorridos;
   double totalCobrar;
 
   cout << "Programa para calcular el cobro de un Uber segun km recorridos - Por Sebastian Holweger \n";
+  cout<< "La tarfia base es de: Q"<<TARIFA_BASE<<" y por km recorrido es: Q"<<TARIFA_KM<<endl;
   cout << "Ingrese los kilómetros recorridos: ";
   cin >> kmRecorridos; //ingreso mis datos
 
@@ -817,7 +812,7 @@ void Fig_geo() {
             default:
                 cout << "Opcion invalida, por favor intente de nuevo." << endl;
         }
-    } while (option != 4);
+    } while (option != 6);
     return;
 
     cout<<"Desea continuar? (s/n) ";
@@ -868,8 +863,9 @@ int main() {
   // Hecho Por Sebastian Holweger :D
   int opcion;
   char opc;
-  cout << "Bienvenido al Menu de programas básicos" << endl;
-  cout << "========================================" << endl;
+  cout << "======================================================================" << endl;
+  cout << "Bienvenido al Menu de programas básicos - Hecho Por Sebastian Holweger" << endl;
+  cout << "======================================================================" << endl;
   cout << "Por favor elija una opción: ";
   cout << "\n1. Suma, Resta, Multiplicación y División de dos números\n2.¿Par o impar?\n3.Convertir de km a mi, m a pulgadas, de lb a kg y viceversa\n4.Palindromo de numeros o letras.\n5.Números arábigos a romanos (mínimo 1,000)\n6.Números enteros a letras\n7.Números enteros con decimal a letras\n8.Tabla de multiplicar\n9.Tablas del 1 al 10\n10.Multiplicación Manual - Forma Grafica\n11.Números decimales a binario\n12.Números decimales a hexadecimales\n13. Figuras Geométricas Básicas.\n14.Conversion de Temperaturas\n15.Simulación de un Cajero (Autómata)\n16.Calcular la hipotenusa\n17.Indice de Masa Corporal\n18.Quetzal a Dolar y Viceversa\n19.Contador de Vocales\n20.Servicio de cobro para Uber\n21.Salir\n";
   cin >> opcion;
@@ -883,6 +879,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 2:
     paroimpar();
@@ -890,6 +887,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 3:
     convertirMedidas();
@@ -897,6 +895,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 4:
     palindromo();
@@ -904,6 +903,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 5:
     arabigosaromano();
@@ -911,6 +911,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 6:
      int numero;
@@ -922,7 +923,7 @@ do
     cin >> opc;
     if (opc == 's')
       main();
-  
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
   return 0;
     break;
   case 7:
@@ -941,7 +942,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
-      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
+     if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
 
     return 0;
     break;
@@ -951,6 +952,8 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc == 'n')
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 9:
     tablashastadiez();
@@ -958,6 +961,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 10:
     /* Crear de forma gráfica la Multiplicación Manual */
@@ -966,6 +970,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 11:
     decimales_binario();
@@ -973,6 +978,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 12:
     decimales_hexadecimales();
@@ -980,6 +986,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 13:
     Fig_geo();
@@ -987,6 +994,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 14:
     temperaturas();
@@ -994,6 +1002,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 15:
     Cajero();
@@ -1001,6 +1010,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 16:
     Hipotenusa();
@@ -1008,6 +1018,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
     //del 17 al 20 es libre...
   case 17: //Calcular Indice de Masa Corporal
@@ -1020,12 +1031,14 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
   case 18: // Conversion de Quetzal a Dolar
     dolares();
    cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 19: // Contador de vocales 
     vocales();
@@ -1033,6 +1046,7 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   case 20: //Programa cobro de Uber
     Uber();
@@ -1040,9 +1054,11 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
-  case 21: //Programa cobro de Uber
-    cout<<"Gracias Por utilizar el programa";
+  case 21:
+    opc = 'n';
+    if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
     break;
   default:
     char opc;
@@ -1051,13 +1067,11 @@ cout << "¿Quieres probar otra opcion? s/n\n";
     cin >> opc;
     if (opc == 's')
       main();
-    if (opc == 'n')
-      cout << "Gracias por utilizar el programa ;)";
-    else
+      if (opc=='n'){cout<<"Gracias Por utilizar el Programa!";}
       break;
   }
 } while (opc!='n');
-  if (opc == 'n')
-      cout << "Gracias por utilizar el programa ;)";
-  return 0;
+
+  system("pause");
+   return 0;
 }
